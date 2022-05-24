@@ -1,8 +1,11 @@
 ---
 layout: jellybean-default
-title: Jellybean Junction Blog
+title: The Jellybean Junction Blog
 ---
-<div class="blurb">
-	<h1>The Jellybean Junction Blog</h1>
-	<p>My colourful crochet adventures</p>
-</div><!-- /.blurb -->
+	<h1>{{ page.title }}</h1>
+	<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
