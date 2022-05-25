@@ -1,5 +1,5 @@
 ---
-layout: jellybean-post
+layout: post
 title: "Welcome to my blog!"
 date: 2017-09-18
 ---
