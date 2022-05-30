@@ -1,0 +1,5 @@
+{% for post in site.posts limit: 5 %}
+  <ul>
+    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  </ul>
+{% endfor %}

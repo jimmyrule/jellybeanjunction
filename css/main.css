@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0 auto;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    background-color: rgb(149, 237, 216);
+}
+.jj-brand {
+  background-color: white;
 }
 .title {
     text-transform: uppercase;
@@ -13,33 +18,93 @@ body {
     font-family: 'Quicksand', sans-serif;
     padding: 12px 0;
 }
-nav ul {
-    padding: 0px;
-    list-style: none;
+nav, footer {
+  background-color: rgb(240, 243, 247);
 }
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+
+.nav-link {
+  color: var(--bs-gray-600);
 }
+
+.nav-link:hover {
+  color: var(--bs-gray-600);
+}
+
 a {
-    text-decoration: none;
-    color: #FC440F;
+  color: black;
 }
 a:hover {
-    text-decoration: underline;
+    color: rgb(252, 100, 113);
+    text-decoration: none;
 }
 h1 {
     font-size: 3em;
-    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
 }
 p {
     color: #333;
 }
 
-ul.posts { 
-    margin: 20px auto 40px;
+ul {
+  padding-left: 0;
 }
 
-ul.posts li {
+ul li {
     list-style: none;
+}
+
+.posts, .cats, .recent {
+  background-color: white;
+  border-radius: 3px;
+  padding: 32px;
+  margin: 2em 0;
+}
+
+.post {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.date, .author {
+  display: inline;
+}
+
+.post-tag-cats {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+i {
+  color: #9b59b6;
+}
+
+a i {
+  color: white;
+}
+
+.btn-primary {
+  background-color: #9b59b6;
+  border: 1px solid #9b59b6;
+}
+
+.btn-primary:hover {
+  background-color: rgb(155, 89, 182, .9);
+  border: 1px solid #9b59b6;
+}
+
+.grid-img {
+  display: inline;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 25%;
+}
+
+.post-img {
+  width: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

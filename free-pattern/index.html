@@ -1,0 +1,39 @@
+---
+layout: default
+title: The Jellybean Junction Blog
+---
+
+	<div class="row">
+		<div class="col-lg-8">
+			<ul>
+				<div class="posts">"Free pattern"</div>
+				{% assign sorted-posts = site.posts | where: "categories","Free pattern" %}
+			  {% for post in sorted-posts %}
+			    <li class="posts">
+						<div class="row">
+							<div class="col-sm-5 d-flex align-items-center">
+								<img class="rounded img-fluid" src="{{ post.cover }}">
+							</div>
+							<div class="col-sm-7">
+								<p class="post category"><i class="bi bi-folder2"></i> {{ post.category }}</p>
+								<h4 class="mb-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+								<p class="post date"><i class="bi bi-calendar-date"></i> {{ post.date | date_to_string }}</p>
+								<p class="post author ms-3"><i class="bi bi-person"></i> by {{ post.author }}</p>
+								<p class="post">{{ post.excerpt }}</p>
+							</div>
+						</div>
+					</li>
+			  {% endfor %}
+			</ul>
+		</div>
+		<div class="col-lg-4">
+			<div class="cats">
+	      <h6>Categories</h6>
+	      {% include categories.html %}
+	    </div>
+			<div class="recent">
+	      <h6>Recent posts</h6>
+	        {% include recent.html %}
+	    </div>
+		</div>
+	</div>

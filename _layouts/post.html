@@ -1,9 +1,26 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-  {{ content }}
+<div class="row">
+  <div class="col-lg-8">
+    <div class="posts">
+      <p class="post date"><i class="bi bi-calendar-date"></i> {{ page.date | date_to_string }}</p>
+      <p class="post author ms-3"><i class="bi bi-person"></i> by {{ page.author }}</p>
+      <h1 class="my-3">{{ page.title }}</h1>
+      {{ content }}
+      <p class="text-muted post-tag-cats">Posted in {{ page.category }}</p>
+    </div>
+    <a href="/" class="btn btn-primary mb-4" role="button"><i class="bi bi-arrow-left-circle"></i> All posts</a>
+  </div>
+  <div class="col-lg-4">
+    <div class="cats">
+      <h6>Categories</h6>
+      {% include categories.html %}
+    </div>
+    <div class="recent">
+      <h6>Recent posts</h6>
+        {% include recent.html %}
+    </div>
+  </div>
 </div>

@@ -2,6 +2,8 @@
 layout: post
 title: "Welcome to my blog!"
 date: 2017-09-18
+category: Projects
+author: Jellybean Junction
 ---
 
 Welcome to my brand new blog! I am a crochet and craft addict, budding crochet designer and new to this blog writing lark. I hope you will enjoy reading about my crafty adventures and be able to take some inspiration from some of my makes.

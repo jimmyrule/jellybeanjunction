@@ -1,3 +1,4 @@
 name: The Jellybean Junction Blog
+url: https://blog.jellybeanjunction.co.uk
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
