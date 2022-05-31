@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="row">
@@ -10,6 +11,9 @@ layout: default
       <h1 class="my-3">{{ page.title }}</h1>
       {{ content }}
       <p class="text-muted post-tag-cats">Posted in {{ page.category }}</p>
+    </div>
+    <div class="posts">
+      {% include disqus.html %}
     </div>
     <a href="/" class="btn btn-primary mb-4" role="button"><i class="bi bi-arrow-left-circle"></i> All posts</a>
   </div>
